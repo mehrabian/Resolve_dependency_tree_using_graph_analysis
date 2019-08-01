@@ -1,0 +1,17 @@
+1. The program is written in Python. To run the program you need to have  python 3 or higher on your system.
+-- to show help part of the code execute python resolveDependencyTree.py --help
+
+2. To execute the program run:
+    python resolveDependencyTree.py --name [arbitrary number of distribution names] --path [relative path to the data directory]
+-- example:
+    python resolveDependencyTree.py --name DateTime Dist-CheckConflicts --path data/
+Note that for this case the data folder is in the same place as the python code
+Code will check for the required packages and if they are not avaible it will print an error message with the guidelines to install it
+
+3. Few tests are written for the code which are inside the test_code.py program. To run the test code, execute:
+    pytest -vv
+Note that for testing the data folder should be in the same folder as the main code.
+if pytest is not avaible on your system install it by running:
+conda install pytest or pip install pytest
+
+Hadi Mehrabian
